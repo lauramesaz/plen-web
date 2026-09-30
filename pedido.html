@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finalizar compra · Plen Wellness</title>
+<meta name="description" content="Finaliza tu pedido Plen Wellness.">
+<meta name="theme-color" content="#F4F3F1">
+<link rel="icon" type="image/png" sizes="64x64" href="marca/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="marca/favicon-32.png">
+<link rel="apple-touch-icon" href="marca/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/plen.css">
+<script src="assets/plen.js" defer></script>
+</head>
+<body data-pagina="pedido">
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="refraccion" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="n"/><feGaussianBlur in="n" stdDeviation="2" result="b"/><feDisplacementMap in="SourceGraphic" in2="b" scale="38" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="lente" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feImage href="assets/lente-mapa.png" x="0" y="0" width="120" height="120" preserveAspectRatio="none" result="m"/><feDisplacementMap in="SourceGraphic" in2="m" scale="46" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+<div class="lente" aria-hidden="true"><span class="lente__brillo"></span></div><div class="estela" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="anuncio">Envío gratis desde $150.000 a toda Colombia</div>
+<header class="header"><div class="env header__in">
+  <nav class="nav"><a href="tienda.html">Tienda</a><a href="magnesio.html">Magnesio</a><a href="index.html#filosofia">Nosotros</a></nav>
+  <button class="icono-btn menu-btn" data-menu aria-label="Menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 8h16M4 16h11"/></svg></button>
+  <a class="logo" href="index.html" aria-label="Plen Wellness, inicio"><img src="marca/logo-plen.png" alt="Plen Wellness"></a>
+  <div class="acciones">
+    <button class="icono-btn" data-abrir-carrito aria-label="Abrir bolsa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="burbuja" data-contador>0</span></button>
+  </div>
+</div></header>
+<div class="menu-movil">
+  <button class="icono-btn cerrar" data-menu aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <a href="index.html">Inicio</a><a href="tienda.html">Tienda</a><a href="magnesio.html"><em>Magnesio</em></a><a href="index.html#filosofia">Nosotros</a>
+</div>
+<main>
+
+<div class="env"><nav class="migas"><a href="index.html">Inicio</a> / Finalizar compra</nav>
+<section class="pedido">
+  <form data-form-pedido>
+    <h1 class="display">Finalizar <em>compra</em></h1>
+    <div class="bloque glass"><h2>Contacto <span>01</span></h2><div class="campos">
+      <div class="campo campo--ancho"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" required autocomplete="name"></div>
+      <div class="campo"><label for="correo">Correo</label><input id="correo" name="correo" type="email" required autocomplete="email"></div>
+      <div class="campo"><label for="celular">Celular</label><input id="celular" name="celular" type="tel" required autocomplete="tel"></div>
+    </div></div>
+    <div class="bloque glass"><h2>Envío <span>02</span></h2><div class="campos">
+      <div class="campo"><label for="ciudad">Ciudad</label><input id="ciudad" name="ciudad" required autocomplete="address-level2"></div>
+      <div class="campo"><label for="depto">Departamento</label><input id="depto" name="depto" required autocomplete="address-level1"></div>
+      <div class="campo campo--ancho"><label for="direccion">Dirección</label><input id="direccion" name="direccion" required autocomplete="street-address" placeholder="Calle, número, apto o casa"></div>
+    </div></div>
+    <div class="bloque glass"><h2>Pago <span>03</span></h2><div class="metodos">
+      <label class="metodo glass"><input type="radio" name="pago" value="Tarjeta" checked><svg viewBox="0 0 28 28"><rect x="3" y="6" width="22" height="16" rx="3"/><path d="M3 11h22"/></svg>Tarjeta</label>
+      <label class="metodo glass"><input type="radio" name="pago" value="PSE"><svg viewBox="0 0 28 28"><path d="M4 11l10-6 10 6M6 11v9M11 11v9M17 11v9M22 11v9M4 23h20"/></svg>PSE</label>
+      <label class="metodo glass"><input type="radio" name="pago" value="Nequi"><svg viewBox="0 0 28 28"><rect x="8" y="3" width="12" height="22" rx="3"/><path d="M12 21h4"/></svg>Nequi</label>
+    </div></div>
+    <button class="btn btn--ancho" style="height:60px">Pagar pedido</button>
+    <p class="nota-demo">Vista de diseño: la pasarela de pago se conecta en el siguiente paso.</p>
+  </form>
+  <aside class="resumen glass"><h2>Tu pedido</h2><div data-resumen></div></aside>
+</section></div>
+
+</main>
+<footer class="boletin"><div class="env">
+  <div class="boletin__grid">
+    <h2 class="display">Bienestar, <em>sin ruido.</em></h2>
+    <div><p style="margin-bottom:18px;opacity:.8">Lanzamientos, rituales y 10% en tu primera compra.</p>
+      <form class="form-linea" data-boletin><input type="email" required placeholder="Tu correo" aria-label="Tu correo"><button>Suscribirme</button></form>
+      <p class="nota-legal">Al suscribirte aceptas nuestra política de datos.</p></div>
+  </div>
+  <div class="footer__grid">
+    <div><img class="footer__logo" src="marca/logo-plen-claro.png" alt="Plen Wellness"><p style="opacity:.6;max-width:280px;font-size:14px">Suplementos esenciales, formulados con intención. Hecho en Colombia.</p></div>
+    <div><h4>Tienda</h4><a href="magnesio.html">Magnesio</a><a href="tienda.html">Todos los productos</a><a href="tienda.html#pronto">Próximamente</a></div>
+    <div><h4>Ayuda</h4><a href="#">Envíos y entregas</a><a href="#">Cambios y devoluciones</a><a href="#">Preguntas frecuentes</a><a href="#">Contacto</a></div>
+    <div><h4>Plen</h4><a href="index.html#filosofia">Nosotros</a><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Términos y condiciones</a></div>
+  </div>
+  <div class="footer__base"><span>© 2026 Plen Wellness · Registro sanitario INVIMA [pendiente]</span>
+    <div class="pagos"><span>Visa</span><span>Mastercard</span><span>PSE</span><span>Nequi</span></div></div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tienda · Plen Wellness</title>
+<meta name="description" content="Todos los suplementos Plen Wellness.">
+<meta name="theme-color" content="#F4F3F1">
+<link rel="icon" type="image/png" sizes="64x64" href="marca/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="marca/favicon-32.png">
+<link rel="apple-touch-icon" href="marca/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/plen.css">
+<script src="assets/plen.js" defer></script>
+</head>
+<body data-pagina="tienda">
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="refraccion" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="2" seed="7" result="n"/><feGaussianBlur in="n" stdDeviation="2" result="b"/><feDisplacementMap in="SourceGraphic" in2="b" scale="38" xChannelSelector="R" yChannelSelector="G"/></filter><filter id="lente" x="0" y="0" width="120" height="120" filterUnits="userSpaceOnUse" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feImage href="assets/lente-mapa.png" x="0" y="0" width="120" height="120" preserveAspectRatio="none" result="m"/><feDisplacementMap in="SourceGraphic" in2="m" scale="46" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+<div class="lente" aria-hidden="true"><span class="lente__brillo"></span></div><div class="estela" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="anuncio">Envío gratis desde $150.000 a toda Colombia</div>
+<header class="header"><div class="env header__in">
+  <nav class="nav"><a href="tienda.html" aria-current="page">Tienda</a><a href="magnesio.html">Magnesio</a><a href="index.html#filosofia">Nosotros</a></nav>
+  <button class="icono-btn menu-btn" data-menu aria-label="Menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 8h16M4 16h11"/></svg></button>
+  <a class="logo" href="index.html" aria-label="Plen Wellness, inicio"><img src="marca/logo-plen.png" alt="Plen Wellness"></a>
+  <div class="acciones">
+    <button class="icono-btn" data-abrir-carrito aria-label="Abrir bolsa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="burbuja" data-contador>0</span></button>
+  </div>
+</div></header>
+<div class="menu-movil">
+  <button class="icono-btn cerrar" data-menu aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <a href="index.html">Inicio</a><a href="tienda.html">Tienda</a><a href="magnesio.html"><em>Magnesio</em></a><a href="index.html#filosofia">Nosotros</a>
+</div>
+<main>
+
+<section class="sec" style="padding-top:clamp(40px,6vw,80px)"><div class="env">
+  <p class="eyebrow rev">Tienda</p>
+  <div class="sec__cab"><h1 class="display rev d1" style="font-size:clamp(56px,8vw,120px)">Todo <em>Plen</em></h1><p class="suave rev" style="max-width:340px">Empezamos con lo esencial. Cada mes sumamos una nueva fórmula.</p></div>
+  <div class="productos"><article class="prod rev ">
+      <a class="prod__img" href="magnesio.html"><img src="assets/img/frasco.jpg" alt="Magnesio Plen" loading="lazy"><span class="prod__tag glass">Nuevo</span></a>
+      <button class="prod__add" data-agregar="magnesio" aria-label="Agregar magnesio a la bolsa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg></button>
+      <div class="prod__info"><div><h3>Magnesio</h3><p>Bisglicinato · 120 cáps.</p></div><span class="p">$89.000</span></div>
+    </article></div>
+  <div class="sec__cab" id="pronto" style="margin-top:clamp(70px,9vw,120px)"><h2 class="display rev">Muy <em>pronto</em></h2></div>
+  <div class="productos"><article class="prod prod--pronto rev d0">
+      <a class="prod__img" href="#" data-pronto><div class="frasco-sil"><span>Omega</span></div><span class="prod__tag glass">Muy pronto</span></a>
+      <div class="prod__info"><div><h3>Omega 3</h3><p>Aceite de pescado</p></div><span class="p suave">—</span></div>
+    </article><article class="prod prod--pronto rev d1">
+      <a class="prod__img" href="#" data-pronto><div class="frasco-sil"><span>Colágeno</span></div><span class="prod__tag glass">Muy pronto</span></a>
+      <div class="prod__info"><div><h3>Colágeno</h3><p>Hidrolizado</p></div><span class="p suave">—</span></div>
+    </article><article class="prod prod--pronto rev d2">
+      <a class="prod__img" href="#" data-pronto><div class="frasco-sil"><span>Vitamina</span></div><span class="prod__tag glass">Muy pronto</span></a>
+      <div class="prod__info"><div><h3>Vitamina D3 + K2</h3><p>Gotas</p></div><span class="p suave">—</span></div>
+    </article><article class="prod prod--pronto rev d3">
+      <a class="prod__img" href="#" data-pronto><div class="frasco-sil"><span>Ashwagandha</span></div><span class="prod__tag glass">Muy pronto</span></a>
+      <div class="prod__info"><div><h3>Ashwagandha</h3><p>Adaptógeno</p></div><span class="p suave">—</span></div>
+    </article><article class="prod prod--pronto rev d0">
+      <a class="prod__img" href="#" data-pronto><div class="frasco-sil"><span>Creatina</span></div><span class="prod__tag glass">Muy pronto</span></a>
+      <div class="prod__info"><div><h3>Creatina</h3><p>Monohidrato</p></div><span class="p suave">—</span></div>
+    </article><article class="prod prod--pronto rev d1">
+      <a class="prod__img" href="#" data-pronto><div class="frasco-sil"><span>Probiótico</span></div><span class="prod__tag glass">Muy pronto</span></a>
+      <div class="prod__info"><div><h3>Probiótico</h3><p>10 cepas</p></div><span class="p suave">—</span></div>
+    </article></div>
+</div></section>
+
+</main>
+<footer class="boletin"><div class="env">
+  <div class="boletin__grid">
+    <h2 class="display">Bienestar, <em>sin ruido.</em></h2>
+    <div><p style="margin-bottom:18px;opacity:.8">Lanzamientos, rituales y 10% en tu primera compra.</p>
+      <form class="form-linea" data-boletin><input type="email" required placeholder="Tu correo" aria-label="Tu correo"><button>Suscribirme</button></form>
+      <p class="nota-legal">Al suscribirte aceptas nuestra política de datos.</p></div>
+  </div>
+  <div class="footer__grid">
+    <div><img class="footer__logo" src="marca/logo-plen-claro.png" alt="Plen Wellness"><p style="opacity:.6;max-width:280px;font-size:14px">Suplementos esenciales, formulados con intención. Hecho en Colombia.</p></div>
+    <div><h4>Tienda</h4><a href="magnesio.html">Magnesio</a><a href="tienda.html">Todos los productos</a><a href="tienda.html#pronto">Próximamente</a></div>
+    <div><h4>Ayuda</h4><a href="#">Envíos y entregas</a><a href="#">Cambios y devoluciones</a><a href="#">Preguntas frecuentes</a><a href="#">Contacto</a></div>
+    <div><h4>Plen</h4><a href="index.html#filosofia">Nosotros</a><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Términos y condiciones</a></div>
+  </div>
+  <div class="footer__base"><span>© 2026 Plen Wellness · Registro sanitario INVIMA [pendiente]</span>
+    <div class="pagos"><span>Visa</span><span>Mastercard</span><span>PSE</span><span>Nequi</span></div></div>
+</div></footer>
+</body>
+</html>
