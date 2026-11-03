@@ -176,7 +176,8 @@ details[open] .mas::after{transform:translate(-50%,-50%) rotate(0)}
 .boletin__grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;padding-bottom:clamp(48px,7vw,90px);border-bottom:1px solid rgba(250,250,250,.14)}
 .boletin h2{font-size:clamp(40px,5vw,72px)}
 .form-linea{display:flex;border-bottom:1px solid rgba(250,250,250,.5);padding-bottom:6px}
-.form-linea input{flex:1;background:none;border:0;color:var(--marfil);font:inherit;font-size:17px;padding:12px 0;outline:none}
+.boletin__grid>*{min-width:0}
+.form-linea input{flex:1;min-width:0;background:none;border:0;color:var(--marfil);font:inherit;font-size:17px;padding:12px 0;outline:none}
 .form-linea input::placeholder{color:rgba(250,250,250,.5)}
 .form-linea button{font-size:12px;letter-spacing:.22em;text-transform:uppercase}
 .nota-legal{font-size:12px;color:rgba(250,250,250,.5);margin-top:14px}
@@ -303,6 +304,7 @@ details[open] .mas::after{transform:translate(-50%,-50%) rotate(0)}
   .header__in{height:66px}
   .logo img{height:32px}
   .hero__grid,.insignia__grid,.filo,.pdp,.pedido,.boletin__grid{grid-template-columns:1fr}
+  .hero__grid>*,.insignia__grid>*,.filo>*,.pdp>*,.pedido>*{min-width:0}
   .hero__foto{order:-1;max-width:520px;width:88%;margin:0 auto}
   .hero h1 .fina{padding-left:.5em}
   .chip-flota{left:-12px;bottom:8%;max-width:200px;padding:12px 16px}
@@ -567,3 +569,6 @@ body{font-size:15px;font-variant-numeric:lining-nums}
 @media (max-width:860px){.sello{width:92px;height:92px}}
 .frasco-sil span{font-size:clamp(13px,1.35vw,19px);letter-spacing:.06em}
 @media (max-width:860px){.chip-flota{bottom:-2%;max-width:190px}.chip-flota b{font-size:18px}}
+
+/* celulares pequeños (≤360 px): que ASHWAGANDHA quepa en su tarjeta */
+@media (max-width:360px){ .prod__info h3{font-size:15px} }
