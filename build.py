@@ -75,7 +75,7 @@ def tarjeta_magnesio(extra=''):
     return f'''<article class="prod rev {extra}">
       <a class="prod__img" href="magnesio.html"><img src="{FRASCO}" alt="Magnesio Plen" loading="lazy"><span class="prod__tag glass">Nuevo</span></a>
       <button class="prod__add" data-agregar="magnesio" aria-label="Agregar magnesio a la bolsa">{MAS}</button>
-      <div class="prod__info"><div><h3>Magnesio</h3><p>Bisglicinato · 120 cáps.</p></div><span class="p">$89.000</span></div>
+      <div class="prod__info"><div><h3>Magnesio + Zinc</h3><p>Bisglicinato · 100 cáps.</p></div><span class="p">$89.000</span></div>
     </article>'''
 
 
@@ -100,7 +100,7 @@ ICONOS = {
 inicio = f'''
 <section class="hero"><div class="env hero__grid">
   <div class="hero__txt">
-    <p class="eyebrow rev">Nuevo · Magnesio bisglicinato</p>
+    <p class="eyebrow rev">Nuevo · Magnesio + zinc bisglicinato</p>
     <h1 class="display rev d1">El ritual<span class="fina"><em>que tu cuerpo</em></span>te pedía</h1>
     <p class="rev d2">Suplementos esenciales, formulados con intención. Empezamos por el mineral que más falta hace: el magnesio.</p>
     <div class="hero__cta rev d3"><a class="btn" href="magnesio.html">Comprar magnesio {FLECHA}</a><a class="btn btn--glass" href="#filosofia">Conocer Plen</a></div>
@@ -109,7 +109,7 @@ inicio = f'''
     <div class="arco"><img src="{FRASCO}" alt="Frasco de magnesio Plen Wellness"></div>
     <svg class="sello" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="c" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><circle cx="60" cy="60" r="58" fill="#F4F3F1"/><text><textPath href="#c">músculo · calma · recuperación ·</textPath></text><path d="M60 46v28M46 60h28M50 50l20 20M70 50L50 70" stroke="#151514" stroke-width=".8"/></svg>
     <div class="gota gota--capsula" aria-hidden="true"></div><div class="gota gota--esfera" aria-hidden="true"></div>
-    <div class="chip-flota glass"><b>120 cápsulas</b>Un mes completo de tu ritual diario.</div>
+    <div class="chip-flota glass"><b>100 cápsulas blandas</b>Una al día, con un vaso de agua.</div>
   </div>
 </div><span class="scroll-v">Desliza</span></section>
 
@@ -118,13 +118,13 @@ inicio = f'''
 </div></div>
 
 <section class="sec"><div class="insignia rev"><div class="insignia__grid">
-  <div class="capsula"><img src="assets/img/mano.jpg" alt="Mano sosteniendo una cápsula" loading="lazy"></div>
+  <div class="capsula"><img src="assets/img/mano.jpg" alt="Mano sosteniendo una cápsula blanda Plen" loading="lazy"></div>
   <div>
     <p class="eyebrow">Fórmula insignia · 01</p>
     <h2 class="display">Magnesio <em>bisglicinato</em></h2>
-    <p>La forma de magnesio más amable con tu cuerpo: unida a glicina para absorberse mejor y sentarle bien a tu estómago.</p>
-    <ul class="lista-check"><li>Apoyo a músculos y sistema nervioso</li><li>Alta absorción</li><li>Suave con el estómago</li></ul>
-    <div class="precio">$89.000 <small>120 cápsulas · 30 días</small></div>
+    <p>Magnesio y zinc en su forma más amable con tu cuerpo: unidos a glicina para absorberse mejor y sentarle bien a tu estómago. En cápsula blanda de centro líquido.</p>
+    <ul class="lista-check"><li>Apoyo a músculos y sistema nervioso</li><li>Con zinc bisglicinato</li><li>Alta absorción</li><li>Suave con el estómago</li></ul>
+    <div class="precio">$89.000 <small>100 cápsulas blandas</small></div>
     <div class="hero__cta"><button class="btn" data-agregar="magnesio">Agregar a la bolsa</button><a class="btn btn--glass" href="magnesio.html">Ver detalles</a></div>
   </div>
 </div></div></section>
@@ -140,13 +140,13 @@ inicio = f'''
 </div></section>
 
 <section class="sec" id="filosofia" style="padding-top:0"><div class="env filo">
-  <div class="filo__fotos rev"><div class="f1"><img src="assets/img/polvo.jpg" alt="Cápsulas y magnesio en polvo" loading="lazy"></div><div class="f2"><img src="assets/img/mano.jpg" alt="" loading="lazy"></div></div>
+  <div class="filo__fotos rev"><div class="f1"><img src="assets/img/polvo.jpg" alt="Cápsulas blandas y magnesio en polvo" loading="lazy"></div><div class="f2"><img src="assets/img/mano.jpg" alt="" loading="lazy"></div></div>
   <div>
     <p class="eyebrow rev">Nuestra filosofía</p>
     <h2 class="display rev d1">Menos, <em>pero mejor</em></h2>
     <p class="rev d2">Plen nace de una idea sencilla: tu bienestar no necesita más ruido, necesita lo esencial bien hecho. Pocos ingredientes, las mejores formas, dosis honestas.</p>
     <p class="rev d2">Sin rellenos innecesarios. Sin promesas milagrosas. Solo un ritual diario que se siente bien.</p>
-    <div class="cifras rev d3"><div><b>01</b><span>Ingrediente clave</span></div><div><b>120</b><span>Cápsulas</span></div><div><b>30</b><span>Días de ritual</span></div></div>
+    <div class="cifras rev d3"><div><b>02</b><span>Minerales clave</span></div><div><b>100</b><span>Cápsulas</span></div><div><b>01</b><span>Al día</span></div></div>
   </div>
 </div></section>
 
@@ -169,11 +169,11 @@ inicio = f'''
   <div class="pasos">
     <div class="paso rev"><h3>Pide</h3><p>Elige compra única o suscríbete y ahorra 15% cada mes.</p></div>
     <div class="paso rev d1"><h3>Recibe</h3><p>Te llega a casa en 2 a 5 días hábiles, en cualquier ciudad de Colombia.</p></div>
-    <div class="paso rev d2"><h3>Siente</h3><p>Cuatro cápsulas al día, preferiblemente en la noche. Constancia es la clave.</p></div>
+    <div class="paso rev d2"><h3>Siente</h3><p>Una cápsula al día con un vaso de agua. Constancia es la clave.</p></div>
   </div>
 </div></section>
 '''
-pagina('index.html', 'Plen Wellness · Suplementos esenciales', 'Plen Wellness: suplementos esenciales hechos en Colombia. Compra magnesio bisglicinato en línea con envío a todo el país.', inicio, 'inicio')
+pagina('index.html', 'Plen Wellness · Suplementos esenciales', 'Plen Wellness: suplementos esenciales hechos en Colombia. Compra magnesio + zinc bisglicinato en línea con envío a todo el país.', inicio, 'inicio')
 
 # ------------------------------------------------------------------ TIENDA
 tienda = f'''
@@ -190,21 +190,21 @@ pagina('tienda.html', 'Tienda · Plen Wellness', 'Todos los suplementos Plen Wel
 # ------------------------------------------------------------------ PRODUCTO
 CHIPS = [('musculo', 'Músculo y nervios'), ('absorcion', 'Alta absorción'), ('estomago', 'Suave con el estómago'), ('calma', 'Para tu noche')]
 producto = f'''
-<div class="env"><nav class="migas"><a href="index.html">Inicio</a> / <a href="tienda.html">Tienda</a> / Magnesio</nav>
+<div class="env"><nav class="migas"><a href="index.html">Inicio</a> / <a href="tienda.html">Tienda</a> / Magnesio + Zinc</nav>
 <section class="pdp">
   <div class="galeria">
     <div class="miniaturas">
       <button class="si" data-src="{FRASCO}"><img src="{FRASCO}" alt="Frasco"></button>
-      <button data-src="assets/img/polvo.jpg"><img src="assets/img/polvo.jpg" alt="Cápsulas"></button>
-      <button data-src="assets/img/mano.jpg"><img src="assets/img/mano.jpg" alt="Cápsula en la mano"></button>
-      <button data-src="assets/img/mar.jpg"><img src="assets/img/mar.jpg" alt="Ritual"></button>
+      <button data-src="assets/img/frasco-luz.jpg"><img src="assets/img/frasco-luz.jpg" alt="Frasco con luz de ventana"></button>
+      <button data-src="assets/img/polvo.jpg"><img src="assets/img/polvo.jpg" alt="Cápsulas blandas"></button>
+      <button data-src="assets/img/mano.jpg"><img src="assets/img/mano.jpg" alt="Cápsula blanda en la mano"></button>
     </div>
-    <div class="foto-grande"><img src="{FRASCO}" alt="Magnesio bisglicinato Plen Wellness"></div>
+    <div class="foto-grande"><img src="{FRASCO}" alt="Frasco de Magnesio + Zinc bisglicinato Plen Wellness"></div>
   </div>
   <div class="pdp__info">
-    <p class="eyebrow">Fórmula 01 · Suplemento dietario</p>
-    <h1 class="display">Magnesio <em>bisglicinato</em></h1>
-    <p class="pdp__sub">Músculo · Calma · Recuperación. 120 cápsulas para 30 días de ritual.</p>
+    <p class="eyebrow">Fórmula 01 · Bisglicinato de magnesio y zinc</p>
+    <h1 class="display">Magnesio <em>+ zinc</em></h1>
+    <p class="pdp__sub">Músculo · Calma · Recuperación. 100 cápsulas blandas de centro líquido, una al día.</p>
     <div class="chips">{''.join(f'<div>{ICONOS[i]}{t}</div>' for i, t in CHIPS)}</div>
     <div class="opciones">
       <label class="opcion glass"><input type="radio" name="plan" value="suscripcion" checked>
@@ -220,13 +220,14 @@ producto = f'''
     </div>
     <p class="garantias">Envío gratis desde $150.000 · Pago seguro · Tarjeta, PSE y Nequi</p>
     <div class="acordeon">
-      <details open><summary>Qué incluye <span class="mas"></span></summary><div class="resp">1 frasco con 120 cápsulas vegetales de magnesio bisglicinato. Rinde 30 días.</div></details>
-      <details><summary>Beneficios <span class="mas"></span></summary><div class="resp"><ul><li>Contribuye al funcionamiento normal de los músculos.</li><li>Apoya el funcionamiento normal del sistema nervioso.</li><li>Forma quelada con glicina, de alta absorción.</li><li>Suave con el estómago.</li></ul></div></details>
-      <details><summary>Cómo tomarlo <span class="mas"></span></summary><div class="resp">Toma 4 cápsulas al día con agua, preferiblemente en la noche. No exceder la dosis diaria recomendada.</div></details>
+      <details open><summary>Qué incluye <span class="mas"></span></summary><div class="resp">1 frasco de vidrio ámbar con 100 cápsulas blandas de centro líquido (60 g), con bisglicinato de magnesio y bisglicinato de zinc.</div></details>
+      <details><summary>Beneficios <span class="mas"></span></summary><div class="resp"><ul><li>Contribuye al funcionamiento normal de los músculos.</li><li>Apoya el funcionamiento normal del sistema nervioso.</li><li>Con zinc, en la misma forma bisglicinato.</li><li>Forma quelada con glicina, de alta absorción.</li><li>Suave con el estómago.</li></ul></div></details>
+      <details><summary>Cómo tomarlo <span class="mas"></span></summary><div class="resp">Toma 1 cápsula al día con un vaso de agua o tu bebida preferida. No exceder la dosis diaria recomendada. Guárdalo en un lugar fresco y seco, protegido de la luz del sol.</div></details>
       <details><summary>Ingredientes <span class="mas"></span></summary><div class="resp">
-        <table class="tabla-nut"><tr><td>Porción</td><td>4 cápsulas</td></tr><tr><td>Magnesio (como bisglicinato)</td><td>[pendiente] mg</td></tr><tr><td>Cápsula</td><td>Vegetal</td></tr></table>
-        <p style="margin-top:12px;font-size:13px">Registro sanitario INVIMA: [pendiente]</p></div></details>
-      <details><summary>Advertencias <span class="mas"></span></summary><div class="resp">Este producto es un suplemento dietario, no es un medicamento y no suple una alimentación equilibrada. Consulta a tu médico si estás en embarazo, lactancia o tomas medicamentos. Mantener fuera del alcance de los niños.</div></details>
+        <p>Gelatina, agua purificada, humectante (glicerina), color (E 150a), bisglicinato de zinc, bisglicinato de magnesio.</p>
+        <table class="tabla-nut" style="margin-top:12px"><tr><td>Contenido neto</td><td>100 unidades · 60 g</td></tr><tr><td>Magnesio por cápsula</td><td>[pendiente] mg</td></tr><tr><td>Zinc por cápsula</td><td>[pendiente] mg</td></tr><tr><td>Cápsula</td><td>Blanda, de gelatina</td></tr></table>
+        <p style="margin-top:12px;font-size:13px">Registro sanitario INVIMA: NSA-4231-2026</p></div></details>
+      <details><summary>Advertencias <span class="mas"></span></summary><div class="resp">Este producto es un alimento y debe comercializarse como tal; no es un medicamento y no suple una alimentación equilibrada. No usar si el sello de seguridad está roto o no lo tiene. Consulta a tu médico si estás en embarazo, lactancia o tomas medicamentos. Mantener fuera del alcance de los niños.</div></details>
     </div>
   </div>
 </section></div>
@@ -250,9 +251,9 @@ producto = f'''
   <div class="productos">{''.join(tarjeta_pronto(n, d, f'd{i}') for i, (n, d) in enumerate(PRONTO[:4]))}</div>
 </div></section>
 
-<div class="barra-fija glass"><span>Magnesio · <span data-precio-btn>$75.650</span></span><button class="btn" data-comprar>Agregar</button></div>
+<div class="barra-fija glass"><span>Magnesio + Zinc · <span data-precio-btn>$75.650</span></span><button class="btn" data-comprar>Agregar</button></div>
 '''
-pagina('magnesio.html', 'Magnesio bisglicinato · Plen Wellness', 'Magnesio bisglicinato Plen Wellness: 120 cápsulas, alta absorción, suave con el estómago. Compra en línea con envío a toda Colombia.', producto, 'producto', 'magnesio.html')
+pagina('magnesio.html', 'Magnesio + Zinc bisglicinato · Plen Wellness', 'Magnesio + zinc bisglicinato Plen Wellness: 100 cápsulas blandas, alta absorción, suave con el estómago. Compra en línea con envío a toda Colombia.', producto, 'producto', 'magnesio.html')
 
 # ------------------------------------------------------------------ PEDIDO
 pedido = '''

@@ -5,7 +5,7 @@ const PLEN = {
   costoEnvio: 12000,
   productos: {
     magnesio: {
-      nombre: 'Magnesio', sub: 'Bisglicinato · 120 cápsulas',
+      nombre: 'Magnesio + Zinc', sub: 'Bisglicinato · 100 cápsulas blandas',
       precio: 89000, img: 'assets/img/frasco.jpg', url: 'magnesio.html'
     }
   }
