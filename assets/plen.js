@@ -5,7 +5,7 @@ const PLEN = {
   costoEnvio: 12000,
   productos: {
     magnesio: {
-      nombre: 'Magnesio + Zinc', sub: 'Bisglicinato · 100 cápsulas blandas',
+      nombre: 'Magnesio + Zinc', sub: 'Bisglicinato · 100 unidades',
       precio: 89000, img: 'assets/img/frasco.jpg', url: 'magnesio.html'
     }
   }
@@ -71,7 +71,7 @@ function pintar() {
   items.innerHTML = carrito.map((it, i) => {
     const p = PLEN.productos[it.id];
     return `<div class="item"><img src="${p.img}" alt="">
-      <div><h4>${p.nombre}</h4><small>${it.plan === 'suscripcion' ? 'Suscripción mensual · −15%' : 'Compra única'}</small>
+      <div><h4>${p.nombre}</h4><small>${it.plan === 'suscripcion' ? 'Suscripción · −15%' : 'Compra única'}</small>
         <div class="cant"><button data-menos="${i}" aria-label="Quitar uno">−</button><span>${it.cant}</span><button data-mas="${i}" aria-label="Agregar uno">+</button></div></div>
       <div class="item__der">${pesos(precioItem(it) * it.cant)}<button data-quitar="${i}">Quitar</button></div></div>`;
   }).join('');
