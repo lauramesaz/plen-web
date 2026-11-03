@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Arma las páginas de Plen (header y footer compartidos). Uso: python3 build.py"""
+import hashlib, re
 from pathlib import Path
 
 RAIZ = Path(__file__).parent
@@ -13,6 +14,13 @@ SELLO = ('<svg class="sello" viewBox="0 0 200 200" aria-hidden="true"><defs><pat
          '<text><textPath href="#sello-abajo" startOffset="50%" text-anchor="middle">HEALTHY</textPath></text><circle class="punto" cx="22" cy="100" r="2.2"/><circle class="punto" cx="178" cy="100" r="2.2"/>'
          '<g class="destello"><line class="rayo" x1="100.00" y1="92.52" x2="100.00" y2="56.00"/><line class="rayo" x1="102.86" y1="93.09" x2="105.05" y2="87.80"/><line class="rayo" x1="105.29" y1="94.71" x2="113.07" y2="86.93"/><line class="rayo" x1="106.91" y1="97.14" x2="112.20" y2="94.95"/><line class="rayo" x1="107.48" y1="100.00" x2="127.28" y2="100.00"/><line class="rayo" x1="106.91" y1="102.86" x2="112.20" y2="105.05"/><line class="rayo" x1="105.29" y1="105.29" x2="113.07" y2="113.07"/><line class="rayo" x1="102.86" y1="106.91" x2="105.05" y2="112.20"/><line class="rayo" x1="100.00" y1="107.48" x2="100.00" y2="144.00"/><line class="rayo" x1="97.14" y1="106.91" x2="94.95" y2="112.20"/><line class="rayo" x1="94.71" y1="105.29" x2="86.93" y2="113.07"/><line class="rayo" x1="93.09" y1="102.86" x2="87.80" y2="105.05"/><line class="rayo" x1="92.52" y1="100.00" x2="72.72" y2="100.00"/><line class="rayo" x1="93.09" y1="97.14" x2="87.80" y2="94.95"/><line class="rayo" x1="94.71" y1="94.71" x2="86.93" y2="86.93"/><line class="rayo" x1="97.14" y1="93.09" x2="94.95" y2="87.80"/><circle class="punto" cx="118.67" cy="81.33" r="1.98"/><circle class="punto" cx="118.67" cy="118.67" r="1.98"/><circle class="punto" cx="81.33" cy="118.67" r="1.98"/><circle class="punto" cx="81.33" cy="81.33" r="1.98"/></g></svg>')
 
+
+def versionar(texto):
+    """Añade ?v=<huella> a fotos, CSS y JS para que ningún navegador muestre una copia vieja al cambiarlos."""
+    def huella(m):
+        ruta = RAIZ / m.group(0)
+        return m.group(0) + '?v=' + hashlib.md5(ruta.read_bytes()).hexdigest()[:8] if ruta.exists() else m.group(0)
+    return re.sub(r'(?:assets|marca)/[\w./-]+\.(?:jpg|png|webp|css|js)(?![?\w])', huella, texto)
 
 def pagina(archivo, titulo, descripcion, cuerpo, pagina_id='', actual=''):
     def nav(href, txt):
@@ -73,6 +81,7 @@ def pagina(archivo, titulo, descripcion, cuerpo, pagina_id='', actual=''):
 </body>
 </html>
 '''
+    html = versionar(html)
     (RAIZ / archivo).write_text(html, encoding='utf-8')
     print('✓', archivo)
 

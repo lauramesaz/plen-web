@@ -6,7 +6,7 @@ const PLEN = {
   productos: {
     magnesio: {
       nombre: 'Magnesio + Zinc', sub: 'Bisglicinato · 100 unidades',
-      precio: 89000, img: 'assets/img/frasco.jpg', url: 'magnesio.html'
+      precio: 89000, img: 'assets/img/frasco.jpg?v=ambar', url: 'magnesio.html'
     }
   }
 };
