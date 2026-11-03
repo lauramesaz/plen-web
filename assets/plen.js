@@ -210,7 +210,7 @@ function lenteLiquida() {
   const pos = gotas.map(() => ({ x: mx, y: my }));
   addEventListener('pointermove', e => {
     mx = e.clientX; my = e.clientY; document.body.classList.add('con-lente');
-    escMeta = e.target.closest('a,button,label,summary,input') ? 1.45 : 1;
+    escMeta = e.target.closest('a,button,label,summary,input') ? 1.3 : 1;
   }, { passive: true });
   document.addEventListener('pointerleave', () => document.body.classList.remove('con-lente'));
   addEventListener('blur', () => document.body.classList.remove('con-lente'));
